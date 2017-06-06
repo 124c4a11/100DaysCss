@@ -1,0 +1,95 @@
+.page {
+  color: #fff;
+  background-color: #3faf82; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.hamburger {
+  width: 80px;
+  height: 52px;
+  cursor: pointer; }
+
+.hamburger__line {
+  width: 100%;
+  height: 8px;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.3); }
+
+.hamburger__line_1 {
+  animation: animate-line-1-rev .7s ease-in-out; }
+
+.hamburger__line_2 {
+  margin: 14px 0;
+  animation: animate-line-2-rev .7s ease-in-out; }
+
+.hamburger__line_3 {
+  animation: animate-line-3-rev .7s ease-in-out; }
+
+/*==========================================================================
+  hamburger_active
+==========================================================================*/
+.hamburger_active .hamburger__line_1 {
+  animation: animate-line-1 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards; }
+.hamburger_active .hamburger__line_2 {
+  animation: animate-line-2 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards; }
+.hamburger_active .hamburger__line_3 {
+  animation: animate-line-3 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards; }
+
+/*==========================================================================
+  hamburger_no-animation
+==========================================================================*/
+.hamburger_no-animation .hamburger__line {
+  animation: none; }
+
+/*==========================================================================
+  animations
+==========================================================================*/
+@keyframes animate-line-1 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0); }
+  50% {
+    transform: translate3d(0, 22px, 0) rotate(0); }
+  100% {
+    transform: translate3d(0, 22px, 0) rotate(45deg); } }
+@keyframes animate-line-1-rev {
+  0% {
+    transform: translate3d(0, 22px, 0) rotate(45deg); }
+  50% {
+    transform: translate3d(0, 22px, 0) rotate(0); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0); } }
+@keyframes animate-line-2 {
+  0% {
+    transform: scale(1);
+    opacity: 1; }
+  100% {
+    transform: scale(0);
+    opacity: 0; } }
+@keyframes animate-line-2-rev {
+  0% {
+    transform: scale(0);
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+@keyframes animate-line-3 {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0); }
+  50% {
+    transform: translate3d(0, -22px, 0) rotate(0); }
+  100% {
+    transform: translate3d(0, -22px, 0) rotate(135deg); } }
+@keyframes animate-line-3-rev {
+  0% {
+    transform: translate3d(0, -22px, 0) rotate(135deg); }
+  50% {
+    transform: translate3d(0, -22px, 0) rotate(0); }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0); } }
+
+/*# sourceMappingURL=style.css.map */
