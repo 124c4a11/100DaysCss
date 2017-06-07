@@ -1,3 +1,3 @@
 # 001-title
 
-!(img/preview.png)
+![](img/preview.png)

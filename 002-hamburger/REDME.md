@@ -1,3 +1,3 @@
 # 002-hamburger
 
-!(img/preview.png)
+![](img/preview.png)
