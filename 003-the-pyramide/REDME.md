@@ -1,3 +1,3 @@
 # 003-the-pyramide
 
-(img/preview.png)
+!(img/preview.png)
