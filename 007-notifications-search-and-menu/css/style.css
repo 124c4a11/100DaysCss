@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400);
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.page {
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #264057; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/*==========================================================================
+  hamburger
+==========================================================================*/
+.hamburger {
+  position: relative;
+  width: 29px;
+  height: 15px;
+  padding: 0;
+  border: 0 none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer; }
+  .hamburger:hover .hamburger__item, .hamburger:hover .hamburger__item::after, .hamburger:hover .hamburger__item::before, .hamburger:hover .hamburger__item::after {
+    background-color: #fff; }
+
+.hamburger__item, .hamburger__item::after {
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 3px;
+  border-radius: 3px; }
+  .hamburger__item, .hamburger__item::after, .hamburger__item::before, .hamburger__item::after {
+    position: absolute;
+    display: block;
+    background-color: #b2daff;
+    transition: all .2s ease-in-out; }
+  .hamburger__item::before {
+    content: '';
+    top: -2px;
+    left: 22px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%; }
+  .hamburger__item::after {
+    content: '';
+    top: 12px;
+    width: 29px; }
+
+/*==========================================================================
+  winget
+==========================================================================*/
+.widget {
+  position: relative;
+  z-index: 2; }
+
+.widget__panel {
+  width: 300px;
+  height: 300px;
+  border-radius: 3px;
+  overflow: hidden;
+  background-color: #fff;
+  box-shadow: 10px 10px 15px 0 rgba(0, 0, 0, 0.3);
+  transition: all .5s ease-in-out; }
+
+.widget__panel_move-right {
+  transform: translate3d(170px, 0, 0); }
+
+.widget__panel-header {
+  position: relative;
+  min-height: 60px;
+  padding: 18px 20px;
+  background-color: #5f98cd;
+  font-size: 0; }
+
+.widget__menu-toggle,
+.widget__panel-title,
+.widget__search-toggle {
+  vertical-align: middle; }
+
+.widget__panel-title {
+  display: inline-block;
+  width: 210px;
+  padding: 0 10px;
+  font-weight: 600;
+  font-size: 15px;
+  color: #fff;
+  text-align: center; }
+
+.widget__search-toggle {
+  padding: 0;
+  border: 0 none;
+  font-size: 21px;
+  color: #b2daff;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s ease-in-out; }
+  .widget__search-toggle:hover {
+    color: #fff; }
+
+.widget__search {
+  position: absolute;
+  top: 50%;
+  right: 55px;
+  transform: translateX(15px);
+  margin-top: -17px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity .3s 0s, transform .3s 0s, visibility 0s .3s; }
+
+.widget__search_visible {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 1;
+  transition: opacity .3s 0s, transform .3s 0s, visibility 0s 0s; }
+
+.widget__search-field {
+  width: 230px;
+  height: 34px;
+  padding: 0 17px;
+  border: 0 none;
+  border-radius: 17px;
+  font-size: 13px;
+  color: #666;
+  background-color: #fff; }
+  .widget__search-field:focus {
+    outline: none; }
+
+.widget__content {
+  padding: 0 20px;
+  min-height: 240px; }
+
+.widget__notifications {
+  position: relative;
+  min-height: 100%;
+  padding: 25px 0 25px 23px;
+  margin: 0;
+  list-style: none; }
+  .widget__notifications::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 7px;
+    width: 3px;
+    background-color: #ebebeb; }
+
+.widget__notifications-item {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 25px; }
+  .widget__notifications-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -20px;
+    display: block;
+    width: 11px;
+    height: 11px;
+    border: 2px solid #5f98cd;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 0 3px #fff; }
+  .widget__notifications-item:last-child {
+    margin-bottom: 0; }
+  .widget__notifications-item:nth-child(1) {
+    animation: slide-in-top 0.5s ease-out 0.2s;
+    animation-fill-mode: both; }
+  .widget__notifications-item:nth-child(2) {
+    animation: slide-in-top 0.5s ease-out 0.4s;
+    animation-fill-mode: both; }
+  .widget__notifications-item:nth-child(3) {
+    animation: slide-in-top 0.5s ease-out 0.6s;
+    animation-fill-mode: both; }
+  .widget__notifications-item:nth-child(4) {
+    animation: slide-in-top 0.5s ease-out 0.8s;
+    animation-fill-mode: both; }
+
+.widget__notifications-item-time {
+  margin-bottom: 2px;
+  font-size: 11px;
+  line-height: 11px; }
+
+.widget__notifications-item-description p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px; }
+.widget__notifications-item-description b {
+  font-weight: 600; }
+
+/*==========================================================================
+  widget__menu
+==========================================================================*/
+.widget__menu {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: -1;
+  transform: translate3d(20px, -50%, 0);
+  width: 170px;
+  border-radius: 3px;
+  background-color: #43627d;
+  transition: all .5s ease-in-out; }
+
+.widget__menu_move-left {
+  transform: translate3d(0, -50%, 0);
+  box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.widget__menu-list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none; }
+
+.widget__menu-item-link {
+  display: block;
+  padding: 18px 17px;
+  font-size: 14px;
+  color: #93b2cd;
+  text-decoration: none;
+  transition: all .2s ease-in-out; }
+  .widget__menu-item-link:hover {
+    color: #fff;
+    background-color: #385269; }
+
+.widget__menu-item-icon,
+.widget__menu-item-text {
+  display: inline-block; }
+
+.widget__menu-item-icon {
+  margin-right: 5px; }
+
+/*==========================================================================
+  animations
+==========================================================================*/
+@keyframes slide-in-top {
+  0% {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0; }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1; } }
+
+/*# sourceMappingURL=style.css.map */

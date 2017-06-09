@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>007-notifications-search-and-menu</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page">
+
+  <div class="centered">
+    <!-- widget -->
+    <div class="widget">
+      <div class="widget__panel">
+        <header class="widget__panel-header">
+          <button class="widget__menu-toggle hamburger" type="button"><span class="hamburger__item"></span></button>
+          <div class="widget__panel-title">Notifications</div>
+          <form class="widget__search">
+            <input type="text" class="widget__search-field" placeholder="Search ...">
+          </form>
+          <button class="widget__search-toggle" type="button"><span class="fa fa-search search-icon"></span></button>
+        </header>
+        <div class="widget__content">
+          <ul class="widget__notifications">
+            <li class="widget__notifications-item">
+              <div class="widget__notifications-item-time">9:24 AM</div>
+              <div class="widget__notifications-item-description">
+                <p><b>John Walker</b> posted a photo on your wall.</p>
+              </div>
+            </li>
+            <li class="widget__notifications-item">
+              <div class="widget__notifications-item-time">8:19 AM</div>
+              <div class="widget__notifications-item-description">
+                <p><b>Alice Parker</b> commented your last post.</p>
+              </div>
+            </li>
+            <li class="widget__notifications-item">
+              <div class="widget__notifications-item-time">Yesterday</div>
+              <div class="widget__notifications-item-description">
+                <p><b>Luke Wayne</b> added you as friend.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="widget__menu">
+        <ul class="widget__menu-list">
+          <li class="widget__menu-item">
+            <a href="#" class="widget__menu-item-link">
+              <span class="widget__menu-item-icon fa fa-dashboard"></span>
+              <span class="widget__menu-item-text">Dashboard</span>
+            </a>
+          </li>
+          <li class="widget__menu-item">
+            <a href="#" class="widget__menu-item-link">
+              <span class="widget__menu-item-icon fa fa-user"></span>
+              <span class="widget__menu-item-text">Profile</span>
+            </a>
+          </li>
+          <li class="widget__menu-item">
+            <a href="#" class="widget__menu-item-link">
+              <span class="widget__menu-item-icon fa fa-bell"></span>
+              <span class="widget__menu-item-text">Notifications</span>
+            </a>
+          </li>
+          <li class="widget__menu-item">
+            <a href="#" class="widget__menu-item-link">
+              <span class="widget__menu-item-icon fa fa-comments"></span>
+              <span class="widget__menu-item-text">Messages</span>
+            </a>
+          </li>
+          <li class="widget__menu-item">
+            <a href="#" class="widget__menu-item-link">
+              <span class="widget__menu-item-icon fa fa-gear"></span>
+              <span class="widget__menu-item-text">Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /widget -->
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
