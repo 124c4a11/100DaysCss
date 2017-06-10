@@ -1,0 +1,377 @@
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+.page {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #000; }
+
+.animation-layer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 400px;
+  margin-top: -200px;
+  margin-left: -200px;
+  background-color: inherit;
+  filter: contrast(25); }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+.ball {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background-color: #fff;
+  filter: blur(15px); }
+
+.buble-1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(183deg);
+  width: 50px;
+  height: 50px; }
+  .buble-1::after {
+    content: '';
+    position: absolute;
+    transform-origin: 37px 37px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(5px);
+    animation: rotate 2.7s ease-in-out 0.2s infinite; }
+
+.buble-2 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(198deg);
+  width: 50px;
+  height: 50px; }
+  .buble-2::after {
+    content: '';
+    position: absolute;
+    transform-origin: 34px 34px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(5px);
+    animation: rotate 2.9s ease-in-out 0.4s infinite; }
+
+.buble-3 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(69deg);
+  width: 50px;
+  height: 50px; }
+  .buble-3::after {
+    content: '';
+    position: absolute;
+    transform-origin: 31px 31px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(5px);
+    animation: rotate 3.1s ease-in-out 0.6s infinite; }
+
+.buble-4 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(248deg);
+  width: 50px;
+  height: 50px; }
+  .buble-4::after {
+    content: '';
+    position: absolute;
+    transform-origin: 28px 28px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(5px);
+    animation: rotate 3.3s ease-in-out 0.8s infinite; }
+
+.buble-5 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(41deg);
+  width: 50px;
+  height: 50px; }
+  .buble-5::after {
+    content: '';
+    position: absolute;
+    transform-origin: 25px 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(5px);
+    animation: rotate 3.5s ease-in-out 1s infinite; }
+
+.buble-6 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(1deg);
+  width: 50px;
+  height: 50px; }
+  .buble-6::after {
+    content: '';
+    position: absolute;
+    transform-origin: 22px 22px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(5px);
+    animation: rotate 3.7s ease-in-out 1.2s infinite; }
+
+.buble-7 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(162deg);
+  width: 50px;
+  height: 50px; }
+  .buble-7::after {
+    content: '';
+    position: absolute;
+    transform-origin: 19px 19px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(5px);
+    animation: rotate 3.9s ease-in-out 1.4s infinite; }
+
+.buble-8 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  transform: rotate(29deg);
+  width: 50px;
+  height: 50px; }
+  .buble-8::after {
+    content: '';
+    position: absolute;
+    transform-origin: 16px 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(5px);
+    animation: rotate 4.1s ease-in-out 1.6s infinite; }
+
+.blob-1 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(3deg);
+  width: 8px;
+  height: 8px; }
+  .blob-1::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 58px 58px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 3.7s ease-in-out 0.2s infinite; }
+
+.blob-2 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(103deg);
+  width: 9px;
+  height: 9px; }
+  .blob-2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 56px 56px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 3.9s ease-in-out 0.4s infinite; }
+
+.blob-3 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(290deg);
+  width: 10px;
+  height: 10px; }
+  .blob-3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 54px 54px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 4.1s ease-in-out 0.6s infinite; }
+
+.blob-4 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(83deg);
+  width: 11px;
+  height: 11px; }
+  .blob-4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 52px 52px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 4.3s ease-in-out 0.8s infinite; }
+
+.blob-5 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(251deg);
+  width: 12px;
+  height: 12px; }
+  .blob-5::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 50px 50px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 4.5s ease-in-out 1s infinite; }
+
+.blob-6 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(218deg);
+  width: 13px;
+  height: 13px; }
+  .blob-6::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 48px 48px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 4.7s ease-in-out 1.2s infinite; }
+
+.blob-7 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(186deg);
+  width: 14px;
+  height: 14px; }
+  .blob-7::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 46px 46px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 4.9s ease-in-out 1.4s infinite; }
+
+.blob-8 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(294deg);
+  width: 15px;
+  height: 15px; }
+  .blob-8::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 44px 44px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 5.1s ease-in-out 1.6s infinite; }
+
+.blob-9 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(265deg);
+  width: 16px;
+  height: 16px; }
+  .blob-9::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 42px 42px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 5.3s ease-in-out 1.8s infinite; }
+
+.blob-10 {
+  position: absolute;
+  top: 38px;
+  left: 38px;
+  transform: rotate(21deg);
+  width: 17px;
+  height: 17px; }
+  .blob-10::after {
+    content: '';
+    position: absolute;
+    display: block;
+    transform-origin: 40px 40px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #fff;
+    filter: blur(3px);
+    animation: rotate 5.5s ease-in-out 2s infinite; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0); }
+  100% {
+    transform: rotate(360deg) translate3d(0, 0, 0); } }
+
+/*# sourceMappingURL=style.css.map */

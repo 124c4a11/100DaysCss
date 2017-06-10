@@ -277,7 +277,8 @@ html {
   z-index: -1;
   transform: translate3d(20px, -50%, 0);
   width: $menu-width;
-  border-radius: 3px;
+  border-radius: 3px 0 0 3px;
+  overflow: hidden;
   background-color: #43627d;
   transition: all .5s ease-in-out;
 }
