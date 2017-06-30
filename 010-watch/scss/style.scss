@@ -1,0 +1,279 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+
+$speed: 10s; // 240s for realtime
+
+@mixin clearfix() {
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+.page {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: #fff;
+  background-color: #4c4c4c;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*================================================================
+   watch
+================================================================*/
+
+.watch {
+  position: relative;
+  width: 212px;
+  height: 212px;
+  border: 7px solid #3a3a3a;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #242424;
+}
+
+@for $i from 1 through 15 {
+  .point-set-#{$i} {
+    position: absolute;
+    width: 188px;
+    height: 188px;
+    top: 12px;
+    left: 12px;
+    transform: rotate( (($i - 1) * 6) + deg );
+    
+    .point-1 {
+      position: absolute;
+      top: 0;
+      left: 93px;
+      width: 2px;
+      height: 2px;
+      border-radius: 50%;
+      background-color: #d3d3d3;
+    }
+
+    .point-2 {
+      @extend .point-1;
+      top: 93px;
+      right: 0;
+      left: auto;
+    }
+
+    .point-3 {
+      @extend .point-1;
+      top: auto;
+      bottom: 0;
+    }
+
+    .point-4 {
+      @extend .point-1;
+      top: 93px;
+      left: 0;
+    }
+  }
+}
+
+.ring {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 202px;
+  height: 202px;
+  border-radius: 50%;
+
+  .mask-1 {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    clip: rect(0, 202px, 202px, 101px);
+    animation: mask-1 $speed steps(1) infinite;
+
+    .spin {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 0;
+      transform-origin: 100% 50%;
+      border: 3px solid #f85b5b;
+      border-right: 0 none;
+      border-radius: 100% 0 0 100% / 50% 0 0 50%;
+      animation: rotate-1 $speed linear infinite;
+    }
+  }
+
+  .mask-2 {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    clip: rect(0, 101px, 202px, 0);
+    animation: mask-2 $speed steps(1) infinite;
+
+    .spin {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 0;
+      transform-origin: 100% 50%;
+      border: 3px solid #f85b5b;
+      border-right: 0 none;
+      border-radius: 100% 0 0 100% / 50% 0 0 50%;
+      animation: rotate-2 $speed linear infinite;
+    }
+  }
+}
+
+.date {
+  position: absolute;
+  top: 68px;
+  width: 100%;
+}
+
+.time {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  margin: 4px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+.beat {
+  position: absolute;
+  top: 129px;
+  left: 57px;
+
+  .fa-heart {
+    margin-top: 1px;
+    margin-right: 4px;
+    font-size: 10px;
+    color: #f85b5b;
+    animation: beat .9s ease-in-out infinite;
+  }
+}
+
+.energy {
+  position: absolute;
+  top: 129px;
+  right: 55px;
+}
+
+/*================================================================
+   animations
+================================================================*/
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.2);
+  }
+}
+
+@keyframes rotate-1 {
+	0% {
+		transform: rotate(0deg);
+	}
+	12.5% {
+		transform: rotate(180deg);
+	}
+	25% {
+		transform: rotate(360deg);
+	}
+	37.5% {
+		transform: rotate(360deg);
+	}
+	50% {
+		transform: rotate(540deg);
+	}
+	62.5% {
+		transform: rotate(540deg);
+	}
+	75% {
+		transform: rotate(540deg);
+	}
+	87.5% {
+		transform: rotate(720deg);
+	}
+	100% {
+		transform: rotate(720deg);
+	}
+}
+
+@keyframes mask-1 {
+	0% {
+		clip: rect(0,202px,202px,101px);
+	}
+	12.5%, 25%, 37.5%, 50% {
+		clip: rect(0,101px,202px,0);
+	}
+	62.5%, 75%, 82.5%, 100% {
+		clip: rect(0,202px,202px,101px);
+	}
+}
+
+@keyframes rotate-2 {
+	0% {
+		transform: rotate(180deg);
+	}
+	12.5% {
+		transform: rotate(180deg);
+	}
+	25% {
+		transform: rotate(180deg);
+	}
+	37.5% {
+		transform: rotate(360deg);
+	}
+	50% {
+		transform: rotate(360deg);
+	}
+	62.5% {
+		transform: rotate(540deg);
+	}
+	75% {
+		transform: rotate(720deg);
+	}
+	87.5% {
+		transform: rotate(720deg);
+	}
+	100% {
+		transform: rotate(900deg);
+	}
+}
+
+@keyframes mask-2 {
+	0% {
+		clip: rect(0,101px,202px,0);
+	}
+	12.5%, 25%, 37.5%, 50%{
+		clip: rect(0,202px,202px,101px);
+	}
+	 62.5%, 75%, 82.5%, 100% {
+		clip: rect(0,101px,202px,0);
+	}
+}

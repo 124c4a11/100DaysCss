@@ -1,0 +1,561 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,400);
+.page {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: #fff;
+  background-color: #4c4c4c; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/*================================================================
+   watch
+================================================================*/
+.watch {
+  position: relative;
+  width: 212px;
+  height: 212px;
+  border: 7px solid #3a3a3a;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #242424; }
+
+.point-set-1 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(0deg); }
+  .point-set-1 .point-1, .point-set-1 .point-2, .point-set-1 .point-3, .point-set-1 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-1 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-1 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-1 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-2 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(6deg); }
+  .point-set-2 .point-1, .point-set-2 .point-2, .point-set-2 .point-3, .point-set-2 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-2 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-2 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-2 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-3 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(12deg); }
+  .point-set-3 .point-1, .point-set-3 .point-2, .point-set-3 .point-3, .point-set-3 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-3 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-3 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-3 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-4 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(18deg); }
+  .point-set-4 .point-1, .point-set-4 .point-2, .point-set-4 .point-3, .point-set-4 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-4 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-4 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-4 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-5 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(24deg); }
+  .point-set-5 .point-1, .point-set-5 .point-2, .point-set-5 .point-3, .point-set-5 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-5 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-5 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-5 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-6 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(30deg); }
+  .point-set-6 .point-1, .point-set-6 .point-2, .point-set-6 .point-3, .point-set-6 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-6 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-6 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-6 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-7 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(36deg); }
+  .point-set-7 .point-1, .point-set-7 .point-2, .point-set-7 .point-3, .point-set-7 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-7 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-7 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-7 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-8 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(42deg); }
+  .point-set-8 .point-1, .point-set-8 .point-2, .point-set-8 .point-3, .point-set-8 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-8 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-8 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-8 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-9 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(48deg); }
+  .point-set-9 .point-1, .point-set-9 .point-2, .point-set-9 .point-3, .point-set-9 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-9 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-9 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-9 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-10 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(54deg); }
+  .point-set-10 .point-1, .point-set-10 .point-2, .point-set-10 .point-3, .point-set-10 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-10 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-10 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-10 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-11 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(60deg); }
+  .point-set-11 .point-1, .point-set-11 .point-2, .point-set-11 .point-3, .point-set-11 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-11 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-11 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-11 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-12 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(66deg); }
+  .point-set-12 .point-1, .point-set-12 .point-2, .point-set-12 .point-3, .point-set-12 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-12 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-12 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-12 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-13 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(72deg); }
+  .point-set-13 .point-1, .point-set-13 .point-2, .point-set-13 .point-3, .point-set-13 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-13 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-13 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-13 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-14 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(78deg); }
+  .point-set-14 .point-1, .point-set-14 .point-2, .point-set-14 .point-3, .point-set-14 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-14 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-14 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-14 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.point-set-15 {
+  position: absolute;
+  width: 188px;
+  height: 188px;
+  top: 12px;
+  left: 12px;
+  transform: rotate(84deg); }
+  .point-set-15 .point-1, .point-set-15 .point-2, .point-set-15 .point-3, .point-set-15 .point-4 {
+    position: absolute;
+    top: 0;
+    left: 93px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: #d3d3d3; }
+  .point-set-15 .point-2 {
+    top: 93px;
+    right: 0;
+    left: auto; }
+  .point-set-15 .point-3 {
+    top: auto;
+    bottom: 0; }
+  .point-set-15 .point-4 {
+    top: 93px;
+    left: 0; }
+
+.ring {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 202px;
+  height: 202px;
+  border-radius: 50%; }
+  .ring .mask-1 {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    clip: rect(0, 202px, 202px, 101px);
+    animation: mask-1 10s steps(1) infinite; }
+    .ring .mask-1 .spin {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 0;
+      transform-origin: 100% 50%;
+      border: 3px solid #f85b5b;
+      border-right: 0 none;
+      border-radius: 100% 0 0 100% / 50% 0 0 50%;
+      animation: rotate-1 10s linear infinite; }
+  .ring .mask-2 {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    clip: rect(0, 101px, 202px, 0);
+    animation: mask-2 10s steps(1) infinite; }
+    .ring .mask-2 .spin {
+      box-sizing: border-box;
+      position: absolute;
+      top: 0;
+      right: 50%;
+      bottom: 0;
+      left: 0;
+      transform-origin: 100% 50%;
+      border: 3px solid #f85b5b;
+      border-right: 0 none;
+      border-radius: 100% 0 0 100% / 50% 0 0 50%;
+      animation: rotate-2 10s linear infinite; }
+
+.date {
+  position: absolute;
+  top: 68px;
+  width: 100%; }
+
+.time {
+  position: absolute;
+  top: 80px;
+  width: 100%;
+  margin: 4px 0;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%; }
+
+.beat {
+  position: absolute;
+  top: 129px;
+  left: 57px; }
+  .beat .fa-heart {
+    margin-top: 1px;
+    margin-right: 4px;
+    font-size: 10px;
+    color: #f85b5b;
+    animation: beat .9s ease-in-out infinite; }
+
+.energy {
+  position: absolute;
+  top: 129px;
+  right: 55px; }
+
+/*================================================================
+   animations
+================================================================*/
+@keyframes beat {
+  0% {
+    transform: scale(1); }
+  35% {
+    transform: scale(1.2); } }
+@keyframes rotate-1 {
+  0% {
+    transform: rotate(0deg); }
+  12.5% {
+    transform: rotate(180deg); }
+  25% {
+    transform: rotate(360deg); }
+  37.5% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(540deg); }
+  62.5% {
+    transform: rotate(540deg); }
+  75% {
+    transform: rotate(540deg); }
+  87.5% {
+    transform: rotate(720deg); }
+  100% {
+    transform: rotate(720deg); } }
+@keyframes mask-1 {
+  0% {
+    clip: rect(0, 202px, 202px, 101px); }
+  12.5%, 25%, 37.5%, 50% {
+    clip: rect(0, 101px, 202px, 0); }
+  62.5%, 75%, 82.5%, 100% {
+    clip: rect(0, 202px, 202px, 101px); } }
+@keyframes rotate-2 {
+  0% {
+    transform: rotate(180deg); }
+  12.5% {
+    transform: rotate(180deg); }
+  25% {
+    transform: rotate(180deg); }
+  37.5% {
+    transform: rotate(360deg); }
+  50% {
+    transform: rotate(360deg); }
+  62.5% {
+    transform: rotate(540deg); }
+  75% {
+    transform: rotate(720deg); }
+  87.5% {
+    transform: rotate(720deg); }
+  100% {
+    transform: rotate(900deg); } }
+@keyframes mask-2 {
+  0% {
+    clip: rect(0, 101px, 202px, 0); }
+  12.5%, 25%, 37.5%, 50% {
+    clip: rect(0, 202px, 202px, 101px); }
+  62.5%, 75%, 82.5%, 100% {
+    clip: rect(0, 101px, 202px, 0); } }
+
+/*# sourceMappingURL=style.css.map */
