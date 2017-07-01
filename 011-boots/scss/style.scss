@@ -1,0 +1,126 @@
+@mixin clearfix() {
+  &::after,
+  &::before {
+    content: '';
+    display: table;
+  }
+
+  &::after {
+    clear: both;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  border-radius: 2px;
+  overflow: hidden;
+  background-image: radial-gradient(center, elipse cover, rgba(246, 232, 215, 1) 0%, rgba(218, 190, 155, 1) 100%);
+  background-color: rgb(246, 232, 215);
+}
+
+/*================================================================
+   invisible-men
+================================================================*/
+
+.invisible-men {
+  animation: fade-in .8s ease-out 1s both;
+}
+
+.leg {
+  position: absolute;
+  top: 0;
+  left: 147px;
+  transform-origin: 50% 0;
+  width: 151px;
+  height: 245px;
+}
+
+.leg_left {
+  animation: leg-swing 2s ease-in-out infinite;
+
+  .shoe {
+    animation: shoe-turn 2s ease-in-out infinite;
+  }
+}
+
+.leg_right {
+  animation: leg-swing 2s ease-in-out 1s infinite;
+
+  .shoe {
+    animation: shoe-turn 2s ease-in-out 1s infinite;
+  }
+}
+
+.shoe {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform-origin: 0 95%;
+  width: 151px;
+  height: 128px;
+  background: url('../img/doc-martens.svg') center center no-repeat;
+}
+
+.floor {
+  position: absolute;
+  top: 244px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #232323;
+}
+
+/*================================================================
+   animations
+================================================================*/
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes leg-swing {
+  0%, 100% {
+    transform: rotate(-22deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+}
+
+@keyframes shoe-turn {
+  0%, 100% {
+    transform: rotate(-10deg) translate(10px, -5px);
+  }
+  25% {
+    transform: rotate(0deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(10deg) translate(10px, -10px);
+  }
+  70% {
+    transform: rotate(0deg) translate(0, -30px);
+  }
+}
