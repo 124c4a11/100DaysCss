@@ -1,0 +1,114 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600,400,300,300italic);
+.page {
+  min-height: 100vh;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #4cb6de; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  transform: translate(-50%, -50%); }
+
+/*================================================================
+   quote
+================================================================*/
+.quote {
+  position: relative;
+  padding: 60px 30px;
+  margin: 0; }
+  .quote::before {
+    content: '„';
+    position: absolute;
+    top: -19px;
+    left: 7px;
+    display: block;
+    font-size: 250px;
+    line-height: 35px;
+    font-family: Arial;
+    color: #6ac2e3; }
+  .quote p {
+    position: relative;
+    z-index: 1;
+    margin: 20px 0;
+    font-size: 24px;
+    line-height: 35px; }
+
+/*================================================================
+   tooltip
+================================================================*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  padding: 0 8px 5px 8px;
+  margin: -10px 0;
+  background-color: #286f8a;
+  cursor: pointer; }
+  .tooltip:hover .tooltip__info, .tooltip:focus .tooltip__info {
+    visibility: visible;
+    opacity: 1;
+    transform: translate3d(0, 0, 0); }
+
+.tooltip__info {
+  position: absolute;
+  bottom: 53px;
+  left: -85px;
+  transform: translate3d(0, -20px, 0);
+  display: block;
+  width: 300px;
+  font-size: 16px;
+  line-height: 24px;
+  visibility: hidden;
+  opacity: 0;
+  background-color: #286f8a;
+  transition: all .5s ease-out; }
+  .tooltip__info::before {
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    width: 100%;
+    height: 14px; }
+  .tooltip__info::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: rotate(45deg);
+    width: 10px;
+    height: 10px;
+    margin-left: -5px;
+    background-color: #286f8a; }
+
+.tooltip__info-pronounce {
+  display: block;
+  padding: 8px 17px 10px 17px;
+  line-height: 16px;
+  color: #286f8a;
+  background-color: #fff; }
+  .tooltip__info-pronounce .fa {
+    position: relative;
+    top: 1px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .2s ease-out; }
+    .tooltip__info-pronounce .fa:hover {
+      transform: scale(1.15) translate3d(0, 0, 0);
+      backface-visibility: none; }
+
+.tooltip__info-text {
+  display: block;
+  padding: 13px 17px; }
+
+.author {
+  font-style: italic;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px; }
+
+/*# sourceMappingURL=style.css.map */
